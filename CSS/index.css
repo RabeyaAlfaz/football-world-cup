@@ -1,0 +1,251 @@
+/* Common style */
+body
+{
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* mobile responsiveness */
+
+@media screen and (min-width: 320px) and (max-width: 480px) 
+{
+    .top-banner-section {
+        background-color: black;
+        margin: auto;
+    }
+
+    /* main section */
+    .main-blog {
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+
+    .blog-btns {
+        background-color: white;
+        width: 100%;
+        margin: auto;
+        border: 0px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+
+    /* footer section */
+    .footer-text {
+        flex-direction: column;
+    }
+}
+
+/* Tablet Responsiveness */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    /* main section */
+    .main-blog {
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+
+    .blog-btns {
+        background-color: white;
+        display: flex;
+    }
+
+    .blog-button {
+        margin-left: 22px;
+        width: 230px;
+        height: 64px;
+        border: 0px solid red;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+
+    }
+
+    .invisible-btn {
+        display: flex;
+        margin-top: 100px;
+    }
+
+
+}
+/* header section style starts */
+.top {
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    width: 100%;
+}
+
+.top-banner-section {
+    display: flex;
+    justify-content:space-between;
+    padding: 50px 100px;
+}
+
+.top-banner-img {
+    width: 50%;
+    transition: transform .2s;
+    margin-left: 50px;
+}
+
+.top-banner-section:hover .top-banner-img {
+    transform: scale(1.5);
+}
+
+.top-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 50%;
+}
+
+.top-info h1 {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+}
+
+.top-btn {
+    background-color: #DD0000;
+    border-radius: 5px;
+    width: 187px;
+    height: 56px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:0px solid red;
+    margin-top: 20px;
+}
+
+.top-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+/* main section styles */
+.main-blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 24px;
+    width: 100%;
+    margin: 130px 0px;
+}
+
+.blog-btns {
+    background-color: black;
+    width: 312px;
+    height: 312px;
+    border-radius: 10px;
+    display: grid;
+    padding: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+
+}
+
+.blog-button {
+    height: 64px;
+    border-radius: 5px;
+}
+
+.blog-button a {
+    color: black;
+    text-decoration: none;
+}
+
+.pink-btn {
+    background-color: #DD0000;
+}
+
+.pink-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    width: 50%;
+}
+
+.blog-details button {
+    width: 100px;
+    height: 32px;
+    margin: 20px;
+}
+
+.blog-details h3 {
+    margin: 0px 20px;
+}
+
+.blog-icon {
+    display: flex;
+    margin: 0px 10px;
+}
+
+.blog-icon p {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.blog-icon p span {
+    margin-left: 5px;
+}
+
+.view-btn
+{
+display: flex;
+justify-content: center;
+margin-bottom: 100px;
+}
+.invisible-btn
+{
+    display: none;
+}
+/* footer section styles */
+.footer-goal {
+    background-color: black;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 140px;
+}
+
+.footer-goal div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-heading {
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+.footer-text p {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.footer-icon i,
+a {
+    margin-left: 5px;
+    padding: 3px;
+    text-decoration: none;
+    color: white;
+}
